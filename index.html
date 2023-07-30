@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Creator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Certificate Creator</h1>
+    <form id="certificateForm">
+      <label for="recipientName">Recipient Name:</label>
+      <input type="text" id="recipientName" required>
+      <label for="certificateDetails">Certificate Details:</label>
+      <textarea id="certificateDetails" required></textarea>
+      <button type="submit">Create Certificate</button>
+    </form>
+    <div id="verificationDiv">
+      <label for="certificateKey">Enter Certificate Key:</label>
+      <input type="text" id="certificateKey" required>
+      <button onclick="verifyCertificate()">Verify Certificate</button>
+      <div id="verificationResult"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
